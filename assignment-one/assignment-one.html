@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+</head>
+<body>
+
+
+	<a href='javascript:void(0);' id="videoplay">Click</a>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/H9rLXiwMJoU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$("#videoplay").click(function(){
+				$(this).hide();
+				$('iframe')[0].src += '&autoplay=1';
+			});
+		});
+	</script>
+</body>
+</html>
